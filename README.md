@@ -31,7 +31,7 @@ python charti.py --list-exchanges
 ```
 
 ### 2. Listing Trading Pairs
-To list all available trading pairs on a specific exchange (e.g., Binance):
+To list all available trading pairs on a specific exchange (e.g., OKX):
 
 ```bash
 python charti.py --list-pairs okx
@@ -46,7 +46,7 @@ python charti.py --download --pair BTC/USDT --exchange okx --start-date 2024-10-
 
 #### Required Arguments for `--download`:
 - `--pair`: The trading pair (e.g., `BTC/USDT`).
-- `--exchange`: The exchange name (e.g., `binance`).
+- `--exchange`: The exchange name (e.g., `okx`).
 - `--start-date`: The start date for data collection in `YYYY-MM-DD` format.
 - `--end-date`: The end date for data collection in `YYYY-MM-DD` format.
 - `--intervals`: The time intervals for data (e.g., `1d`, `1h`, `15m`). Accepts multiple intervals.
@@ -86,11 +86,11 @@ Supported Exchanges:
 
 ### Example 2: Listing Trading Pairs
 ```bash
-python charti.py --list-pairs binance
+python charti.py --list-pairs okx
 ```
 **Output:**
 ```
-Trading Pairs on binance:
+Trading Pairs on okx:
 - BTC/USDT
 - ETH/USDT
 - ADA/USDT
